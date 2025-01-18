@@ -4,7 +4,7 @@ class Location:
         self.code = code
         self.stock_at_locations = {}
 
-    def __repr__(self):
+    def __str__(self):
         return f"Location(name={self.name}, code={self.code})"
 
     def add_stock(self, product, quantity):
@@ -39,7 +39,7 @@ class Product:
         self.code = code
         Product.products.append(self)
 
-    def __repr__(self):
+    def __str__(self):
         return f"Product(name={self.name}, code={self.code})"
 
     def display_movements(self):
